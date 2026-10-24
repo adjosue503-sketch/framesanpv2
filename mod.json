@@ -1,0 +1,27 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "tuusuario.framesnap",
+  "name": "FrameSnap",
+  "version": "v0.1.0",
+  "developer": "tuusuario",
+  "description": "Ayuda de timing: ajusta cada click al frame exacto. Modo frame perfect y modo regular.",
+  "settings": {
+    "mode": {
+      "type": "string",
+      "name": "Modo",
+      "description": "Regular: juego normal sin tocar clicks. Frame perfect: cada click se aplica en el frame exacto.",
+      "default": "Frame perfect",
+      "one-of": ["Regular", "Frame perfect"]
+    },
+    "window-ms": {
+      "type": "int",
+      "name": "Ventana (ms)",
+      "description": "Tolerancia para ajustar el click al frame exacto.",
+      "default": 80,
+      "min": 0,
+      "max": 200
+    }
+  }
